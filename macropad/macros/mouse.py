@@ -16,6 +16,7 @@ from adafruit_hid.mouse import Mouse
 # mixes types! See other macro files for typical Keycode examples.
 
 app = {               # REQUIRED dict, must be named 'app'
+    'id': 'mouse',
     'name' : 'Mouse', # Application name
     'macros' : [      # List of button macros...
         # COLOR    LABEL    KEY SEQUENCE

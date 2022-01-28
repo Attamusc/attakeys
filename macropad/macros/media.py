@@ -15,6 +15,7 @@ from adafruit_hid.consumer_control_code import ConsumerControlCode
 # See other macro files for typical Keycode examples.
 
 app = {               # REQUIRED dict, must be named 'app'
+    'id': 'media',
     'name' : 'Media', # Application name
     'macros' : [      # List of button macros...
         # COLOR    LABEL    KEY SEQUENCE

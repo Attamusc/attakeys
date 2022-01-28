@@ -1,0 +1,72 @@
+{
+  "default_scene": "home",
+  "scenes": [{
+    name: "home",
+    bindings: [{
+      button: (0, 0},
+      led: {
+        normal: "blue",
+        focus: "white"
+      },
+      desc: "zoom",
+      actions: [Scene{
+        destination: "zoom",
+      }]
+    }]
+  }, {
+    name: "zoom",
+    bindings: [{
+      button: (2, 0},
+      led: {
+        normal: "green",
+        active: "red",
+        focus: "white"
+      },
+      desc: "Audio",
+      actions: [Press{
+        key: "a",
+        modifiers: {
+          ctrl: true,
+          alt: true,
+        }
+      }]
+    }, {
+      button: (3, 0},
+      led: {
+        normal: "green",
+        active: "red",
+        focus: "white"
+      },
+      desc: "Video",
+      actions: [Press{
+        key: "v",
+        modifiers: {
+          ctrl: true,
+          alt: true,
+        }
+      }]
+    }, {
+      button: (3, 2},
+      led: {
+        normal: "red",
+        focus: "white"
+      },
+      desc: "Leave",
+      actions: [
+        Press{
+          key: "w",
+          modifiers: {
+            cmd: true,
+          }
+        },
+        Delay{
+          amount: 0.5,
+        },
+        Press{
+          key: "enter",
+          modifiers: (}
+        }
+      ]
+    }]
+  }]
+}

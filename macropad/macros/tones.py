@@ -14,6 +14,7 @@
 # with other elements (keys, codes, mouse) to provide auditory feedback.
 
 app = {               # REQUIRED dict, must be named 'app'
+    'id': 'tones',
     'name' : 'Tones', # Application name
     'macros' : [      # List of button macros...
         # COLOR    LABEL    KEY SEQUENCE
